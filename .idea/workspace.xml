@@ -21,7 +21,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/RemediosDaVovo" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -70,7 +70,7 @@
       <workItem from="1783978966374" duration="93000" />
       <workItem from="1783979130205" duration="629000" />
       <workItem from="1786825679535" duration="2140000" />
-      <workItem from="1786828939623" duration="3407000" />
+      <workItem from="1786828939623" duration="3682000" />
     </task>
     <servers />
   </component>
