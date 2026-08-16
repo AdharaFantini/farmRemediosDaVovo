@@ -75,7 +75,7 @@
 
         <span>Seja bem vindo(a),</span>
 
-        <a href="#">Entre ou Cadastre-se</a>
+        <a href="#" id="linkUsuario">Entre ou Cadastre-se</a>
 
     </div>
 
@@ -104,8 +104,9 @@
                 <div class="profile-photo">
 
                     <img
-                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=80"
-                            alt="Foto do perfil">
+                    <img id="fotoPerfil"
+                         src="assets/img/perfil.png"
+                         alt="Foto do perfil">
 
                     <button class="camera">
                         <i class="fa-solid fa-camera"></i>
@@ -113,8 +114,8 @@
 
                 </div>
 
-                <h3>Ana Carolina</h3>
-                <p>ana.carolina@email.com</p>
+                <h3 id="nomePerfil"></h3>
+                <p id="emailPerfil"></p>
 
             </div>
 
@@ -194,12 +195,12 @@
 
                         <div class="info-item">
                             <span>Nome completo</span>
-                            <strong>Ana Carolina Silva</strong>
+                            <strong id="nomeUsuario"></strong>
                         </div>
 
                         <div class="info-item">
                             <span>E-mail</span>
-                            <strong>ana.carolina@email.com</strong>
+                            <strong id="emailUsuario"></strong>
                         </div>
 
                     </div>
@@ -209,12 +210,12 @@
 
                         <div class="info-item">
                             <span>Data de nascimento</span>
-                            <strong>12/05/1998</strong>
+                            <strong id="nascimentoUsuario"></strong>
                         </div>
 
                         <div class="info-item">
                             <span>Telefone</span>
-                            <strong>(31) 99999-9999</strong>
+                            <strong id="telefoneUsuario"></strong>
                         </div>
 
                     </div>
@@ -224,7 +225,7 @@
 
                         <div class="info-item">
                             <span>CPF</span>
-                            <strong>123.456.789-00</strong>
+                            <strong id="cpfUsuario"></strong>
                         </div>
 
                     </div>
@@ -438,5 +439,7 @@
     </div>
 
 </footer>
+<script src="assets/scripts/usuario.js"></script>
+<script src="assets/scripts/nav.js"></script>
 </body>
 </html>

@@ -75,7 +75,7 @@
 
         <span>Seja bem vindo(a),</span>
 
-        <a href="#">Entre ou Cadastre-se</a>
+        <a href="#" id="linkUsuario">Entre ou Cadastre-se</a>
 
     </div>
 
@@ -108,7 +108,7 @@
 
         <!-- FORMULÁRIO -->
 
-        <form>
+        <form id="formLogin">
 
 
             <!-- EMAIL -->
@@ -123,8 +123,8 @@
 
                     <input
                             type="email"
+                            id="loginEmail"
                             placeholder="Digite seu e-mail">
-
                 </div>
 
             </div>
@@ -292,7 +292,51 @@
 
     }
 
-</script>
 
+</script>
+<script>
+
+    const formLogin = document.getElementById("formLogin");
+
+    formLogin.addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        const email = document.getElementById("loginEmail").value.trim();
+        const senha = document.getElementById("loginSenha").value;
+
+        const usuario = JSON.parse(localStorage.getItem("usuario"));
+
+
+        // Verifica se existe cadastro
+        if (!usuario) {
+
+            alert("Nenhuma conta cadastrada. Faça seu cadastro primeiro.");
+
+            return;
+        }
+
+
+        // Verifica e-mail e senha
+        if (email === usuario.email && senha === usuario.senha) {
+
+            // Marca que a pessoa está logada
+            localStorage.setItem("logado", "true");
+
+            alert("Login realizado com sucesso!");
+
+            // Vai para o perfil
+            window.location.href = "usuario.html";
+
+        } else {
+
+            alert("E-mail ou senha incorretos.");
+
+        }
+
+    });
+
+</script>
+<script src="assets/scripts/nav.js"></script>
 </body>
 </html>
