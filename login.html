@@ -75,7 +75,9 @@
 
         <span>Seja bem vindo(a),</span>
 
-        <a href="#" id="linkUsuario">Entre ou Cadastre-se</a>
+        <a href="login.html" id="linkUsuario">
+            Entre ou Cadastre-se
+        </a>
 
     </div>
 
@@ -308,7 +310,7 @@
         const usuario = JSON.parse(localStorage.getItem("usuario"));
 
 
-        // Verifica se existe cadastro
+        // Se não existe cadastro
         if (!usuario) {
 
             alert("Nenhuma conta cadastrada. Faça seu cadastro primeiro.");
@@ -320,12 +322,10 @@
         // Verifica e-mail e senha
         if (email === usuario.email && senha === usuario.senha) {
 
-            // Marca que a pessoa está logada
             localStorage.setItem("logado", "true");
 
             alert("Login realizado com sucesso!");
 
-            // Vai para o perfil
             window.location.href = "usuario.html";
 
         } else {

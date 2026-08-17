@@ -75,7 +75,9 @@
 
         <span>Seja bem vindo(a),</span>
 
-        <a href="#" id="linkUsuario">Entre ou Cadastre-se</a>
+        <a href="login.html" id="linkUsuario">
+            Entre ou Cadastre-se
+        </a>
 
     </div>
 
@@ -449,14 +451,11 @@
         };
 
 
-        localStorage.setItem(
-            "usuario",
-            JSON.stringify(usuario)
-        );
+        localStorage.setItem("usuario", JSON.stringify(usuario));
 
+        localStorage.setItem("logado", "true");
 
         alert("Cadastro realizado com sucesso!");
-
 
         window.location.href = "usuario.html";
 

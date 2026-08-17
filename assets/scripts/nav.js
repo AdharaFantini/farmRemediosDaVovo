@@ -1,26 +1,53 @@
-const linkUsuario = document.getElementById("linkUsuario");
+// ===============================
+// ATUALIZAR HEADER DO USUÁRIO
+// ===============================
 
-const usuario = JSON.parse(localStorage.getItem("usuario"));
-const logado = localStorage.getItem("logado");
+function atualizarUsuario() {
+
+    const usuario = JSON.parse(localStorage.getItem("usuario"));
+    const logado = localStorage.getItem("logado");
+
+    const iconeUsuario = document.getElementById("iconeUsuario");
+    const linkUsuario = document.getElementById("linkUsuario");
 
 
-if (logado === "true" && usuario) {
+    // ===============================
+    // USUÁRIO LOGADO
+    // ===============================
 
-    linkUsuario.innerText = usuario.nome;
+    if (usuario && logado === "true") {
 
-    linkUsuario.href = "usuario.html";
+        if (iconeUsuario) {
+            iconeUsuario.href = "usuario.html";
+        }
 
-} else {
+        if (linkUsuario) {
+            linkUsuario.href = "usuario.html";
+            linkUsuario.textContent = usuario.nome;
+        }
 
-    linkUsuario.innerText = "Entre ou Cadastre-se";
+    }
 
-    linkUsuario.href = "login.html";
+
+        // ===============================
+        // USUÁRIO NÃO LOGADO
+    // ===============================
+
+    else {
+
+        if (iconeUsuario) {
+            iconeUsuario.href = "login.html";
+        }
+
+        if (linkUsuario) {
+            linkUsuario.href = "login.html";
+            linkUsuario.textContent = "Entre ou Cadastre-se";
+        }
+
+    }
 
 }
-const iconeUsuario = document.getElementById("iconeUsuario");
 
-if (logado === "true" && usuario) {
-    iconeUsuario.href = "usuario.html";
-} else {
-    iconeUsuario.href = "login.html";
-}
+
+// Executa quando a página carregar
+document.addEventListener("DOMContentLoaded", atualizarUsuario);

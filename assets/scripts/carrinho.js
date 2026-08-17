@@ -187,9 +187,13 @@ function calcularFrete() {
     alert("Digite um CEP válido");
     
     return;
+
+
     
   }
-  
+  localStorage.setItem("endereco", JSON.stringify({
+    cep: document.getElementById("cep").value
+  }));
   
   
   valorFrete = 8;
@@ -291,4 +295,99 @@ function irPagamento() {
 }
 
 
-//teste
+function finalizarCompra() {
+
+  const usuario = JSON.parse(localStorage.getItem("usuario"));
+  const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+
+  if (!usuario) {
+    alert("Faça login para finalizar a compra.");
+    location.href = "login.html";
+    return;
+  }
+
+  if (carrinho.length === 0) {
+    alert("Seu carrinho está vazio.");
+    return;
+  }
+
+  const total = carrinho.reduce(function(soma, produto) {
+
+    return soma + produto.preco * produto.quantidade;
+
+  }, 0);
+
+
+  const pedido = {
+
+    numero: Date.now(),
+
+    data: new Date().toLocaleDateString("pt-BR"),
+
+    produtos: carrinho,
+
+    total: total,
+
+    status: "Pedido realizado"
+
+  };
+
+
+  // Pega pedidos anteriores
+  let pedidos = JSON.parse(
+      localStorage.getItem("pedidos_" + usuario.email)
+  ) || [];
+
+
+  // Adiciona o novo pedido
+  pedidos.push(pedido);
+
+
+  // Salva
+  localStorage.setItem(
+      "pedidos_" + usuario.email,
+      JSON.stringify(pedidos)
+  );
+
+
+  // Limpa o carrinho
+  localStorage.removeItem("carrinho");
+
+
+  alert("Pedido realizado com sucesso!");
+
+  location.href = "usuario.html";
+}
+
+function irPagamento() {
+
+  const carrinho =
+      JSON.parse(localStorage.getItem("carrinho")) || [];
+
+  const cep =
+      document.getElementById("cep").value.trim();
+
+  if (carrinho.length === 0) {
+
+    alert("Adicione produtos ao carrinho primeiro.");
+
+    return;
+  }
+
+  if (cep === "") {
+
+    alert("Digite o CEP antes de escolher o pagamento.");
+
+    return;
+  }
+
+  // Salva o CEP
+  localStorage.setItem(
+      "endereco",
+      JSON.stringify({
+        cep: cep
+      })
+  );
+
+  window.location.href = "pagamento.html";
+}

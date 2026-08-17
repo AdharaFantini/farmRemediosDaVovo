@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="454f8b42-7782-4bfa-9e44-577d124e1390" name="Changes" comment="happy">
-      <change afterPath="$PROJECT_DIR$/assets/scripts/nav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scripts/usuario.js" afterDir="false" />
+    <list default="true" id="454f8b42-7782-4bfa-9e44-577d124e1390" name="Changes" comment="user">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scripts/carrinho.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/carrinho.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scripts/nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scripts/pagamento.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/pagamento.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scripts/produto.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/produto.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scripts/scriptprod.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/scriptprod.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scripts/usuario.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/usuario.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cadastro.html" beforeDir="false" afterPath="$PROJECT_DIR$/cadastro.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/carrinho.html" beforeDir="false" afterPath="$PROJECT_DIR$/carrinho.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/faleConosco.html" beforeDir="false" afterPath="$PROJECT_DIR$/faleConosco.html" afterDir="false" />
@@ -86,7 +90,7 @@
       <workItem from="1786825679535" duration="2140000" />
       <workItem from="1786828939623" duration="3682000" />
       <workItem from="1786833136554" duration="948000" />
-      <workItem from="1786910480870" duration="4583000" />
+      <workItem from="1786910480870" duration="14072000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <option name="closed" value="true" />
@@ -120,7 +124,23 @@
       <option name="project" value="LOCAL" />
       <updated>1786913747578</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="bem vindo">
+      <option name="closed" value="true" />
+      <created>1786916082088</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1786916082088</updated>
+    </task>
+    <task id="LOCAL-00006" summary="user">
+      <option name="closed" value="true" />
+      <created>1786916202347</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1786916202347</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +149,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="a" />
     <MESSAGE value="happy" />
-    <option name="LAST_COMMIT_MESSAGE" value="happy" />
+    <MESSAGE value="bem vindo" />
+    <MESSAGE value="user" />
+    <option name="LAST_COMMIT_MESSAGE" value="user" />
   </component>
 </project>

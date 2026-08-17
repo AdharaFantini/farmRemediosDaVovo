@@ -169,4 +169,32 @@ if (pesquisa) {
     });
 
 }
+function adicionarFavorito(id) {
 
+    const produto = produtos[id];
+
+    let favoritos =
+        JSON.parse(localStorage.getItem("favoritos")) || [];
+
+    const existe = favoritos.some(function(item) {
+
+        return item.nome === produto.nome;
+
+    });
+
+    if (existe) {
+
+        alert("Esse produto já está nos favoritos.");
+
+        return;
+    }
+
+    favoritos.push(produto);
+
+    localStorage.setItem(
+        "favoritos",
+        JSON.stringify(favoritos)
+    );
+
+    alert("Produto adicionado aos favoritos!");
+}

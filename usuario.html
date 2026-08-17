@@ -75,7 +75,9 @@
 
         <span>Seja bem vindo(a),</span>
 
-        <a href="#" id="linkUsuario">Entre ou Cadastre-se</a>
+        <a href="login.html" id="linkUsuario">
+            Entre ou Cadastre-se
+        </a>
 
     </div>
 
@@ -103,14 +105,18 @@
 
                 <div class="profile-photo">
 
-                    <img
                     <img id="fotoPerfil"
                          src="assets/img/perfil.png"
                          alt="Foto do perfil">
 
-                    <button class="camera">
+                    <button class="camera" id="botaoFoto" type="button">
                         <i class="fa-solid fa-camera"></i>
                     </button>
+
+                    <input type="file"
+                           id="inputFoto"
+                           accept="image/*"
+                           style="display:none;">
 
                 </div>
 
@@ -122,43 +128,36 @@
 
             <div class="sidebar-menu">
 
-                <a href="#" class="selected">
+                <a href="#dados" class="selected">
                     <i class="fa-solid fa-user"></i>
                     <span>Dados pessoais</span>
                 </a>
 
-                <a href="#">
+                <a href="#endereco">
                     <i class="fa-solid fa-location-dot"></i>
                     <span>Endereços</span>
                 </a>
 
-                <a href="#">
+                <a href="#pedidos">
                     <i class="fa-solid fa-bag-shopping"></i>
                     <span>Histórico de compras</span>
                 </a>
 
-                <a href="#">
+                <a href="#favoritos">
                     <i class="fa-solid fa-heart"></i>
                     <span>Meus favoritos</span>
                 </a>
 
-                <a href="#">
-                    <i class="fa-regular fa-credit-card"></i>
-                    <span>Formas de pagamento</span>
+                <a href="#pagamento">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <span>Pagamento</span>
                 </a>
-
-                <a href="#">
-                    <i class="fa-solid fa-gear"></i>
-                    <span>Configurações</span>
-                </a>
-
                 <a href="#" class="logout">
                     <i class="fa-solid fa-arrow-right-from-bracket"></i>
                     <span>Sair da conta</span>
                 </a>
 
             </div>
-
         </aside>
 
 
@@ -167,7 +166,7 @@
 
 
             <!-- DADOS PESSOAIS -->
-            <div class="card personal-card">
+            <div class="card personal-card" id="dados">
 
                 <div class="card-header">
 
@@ -236,7 +235,8 @@
 
 
             <!-- ENDEREÇO -->
-            <div class="card address-card">
+            <!-- ENDEREÇO -->
+            <div class="card address-card" id="endereco">
 
                 <div class="card-header">
 
@@ -257,31 +257,16 @@
 
                 </div>
 
+                <div class="address-info" id="enderecoInfo">
 
-                <div class="address-info">
-
-                    <div>
-                        <strong>Rua das Flores, 123</strong>
-                        <strong>Apto 45 - Bairro Centro</strong>
-                    </div>
-
-                    <div>
-                        <strong>Belo Horizonte - MG</strong>
-                        <strong>CEP: 30130-010</strong>
-                    </div>
-
-                    <div>
-                        <span>Referência:</span>
-                        <strong>Próximo à Farmácia Popular</strong>
-                    </div>
+                    <p>Nenhum endereço cadastrado.</p>
 
                 </div>
 
             </div>
 
-
             <!-- HISTÓRICO DE COMPRAS -->
-            <div class="card orders-card">
+            <div class="card orders-card" id="pedidos">
 
                 <div class="card-header">
 
@@ -302,95 +287,65 @@
                 </div>
 
 
-                <div class="orders-table">
+                <div class="orders-table" id="listaPedidos">
 
-                    <div class="table-head">
+                    <p>Nenhum pedido realizado.</p>
 
-                        <span>Pedido</span>
-                        <span>Data</span>
-                        <span>Produtos</span>
-                        <span>Valor</span>
-                        <span>Status</span>
-                        <span></span>
-
-                    </div>
+                </div>
 
 
-                    <div class="table-row">
+            </div>
 
-                        <strong>#12548</strong>
-                        <span>14/07/2025</span>
-                        <span>3 itens</span>
-                        <span>R$ 87,90</span>
+            <!-- FAVORITOS -->
 
-                        <span>
-                                <label class="status">
-                                    Entregue
-                                </label>
-                            </span>
+            <div class="card" id="favoritos">
 
-                        <i class="fa-solid fa-chevron-right"></i>
+                <div class="card-header">
 
-                    </div>
+                    <div class="card-title">
 
+                        <div class="card-icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
 
-                    <div class="table-row">
-
-                        <strong>#12401</strong>
-                        <span>28/06/2025</span>
-                        <span>2 itens</span>
-                        <span>R$ 46,50</span>
-
-                        <span>
-                                <label class="status">
-                                    Entregue
-                                </label>
-                            </span>
-
-                        <i class="fa-solid fa-chevron-right"></i>
-
-                    </div>
-
-
-                    <div class="table-row">
-
-                        <strong>#12232</strong>
-                        <span>10/06/2025</span>
-                        <span>1 item</span>
-                        <span>R$ 23,10</span>
-
-                        <span>
-                                <label class="status">
-                                    Entregue
-                                </label>
-                            </span>
-
-                        <i class="fa-solid fa-chevron-right"></i>
-
-                    </div>
-
-
-                    <div class="table-row">
-
-                        <strong>#12012</strong>
-                        <span>22/05/2025</span>
-                        <span>4 itens</span>
-                        <span>R$ 132,40</span>
-
-                        <span>
-                                <label class="status">
-                                    Entregue
-                                </label>
-                            </span>
-
-                        <i class="fa-solid fa-chevron-right"></i>
+                        <h3>Meus favoritos</h3>
 
                     </div>
 
                 </div>
 
+                <div id="listaFavoritos">
+
+                    <p>Nenhum produto favorito.</p>
+
+                </div>
+
             </div>
 
+
+            <!-- PAGAMENTO -->
+
+            <div class="card" id="pagamento">
+
+                <div class="card-header">
+
+                    <div class="card-title">
+
+                        <div class="card-icon">
+                            <i class="fa-solid fa-credit-card"></i>
+                        </div>
+
+                        <h3>Forma de pagamento</h3>
+
+                    </div>
+
+                </div>
+
+                <p id="formaPagamento">
+                    Nenhuma forma de pagamento escolhida.
+                </p>
+
+            </div>
         </section>
 
     </div>
@@ -441,5 +396,7 @@
 </footer>
 <script src="assets/scripts/usuario.js"></script>
 <script src="assets/scripts/nav.js"></script>
+
+
 </body>
 </html>

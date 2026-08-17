@@ -106,7 +106,9 @@
 
         <span>Seja bem vindo(a),</span>
 
-        <a href="#" id="linkUsuario">Entre ou Cadastre-se</a>
+        <a href="login.html" id="linkUsuario">
+          Entre ou Cadastre-se
+        </a>
 
       </div>
       
@@ -125,21 +127,21 @@
 
 
 
-<section class="frete">
+  <section class="frete">
 
-<h2>Calcular frete e prazo de entrega</h2>
+    <h2>Calcular frete e prazo de entrega</h2>
 
-<input id="cep" placeholder="Digite seu CEP">
+    <input id="cep" placeholder="Digite seu CEP">
 
-<button onclick="calcularFrete()">
-Calcular
-</button>
+    <button onclick="calcularFrete()">
+      Calcular
+    </button>
 
+    <p id="resultadoFrete"></p>
 
-<p id="resultadoFrete"></p>
+    <p id="enderecoSalvo"></p>
 
-
-</section>
+  </section>
 
 
 
@@ -257,24 +259,7 @@ R$ 0,00
   
 </footer>
   
-  <script>
-const formulario = document.getElementById("formContato");
 
-formulario.addEventListener("submit", function(event) {
-
-    event.preventDefault();
-
-    alert("✅ Sua mensagem foi enviada com sucesso! Em breve entraremos em contato.");
-
-    formulario.reset();
-
-});
-</script>
-  
-  
-</body>
-
-</html>
 
 <script src="assets/scripts/carrinho.js"></script>
 <script src="assets/scripts/header.js"></script>
