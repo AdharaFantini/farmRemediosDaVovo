@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="454f8b42-7782-4bfa-9e44-577d124e1390" name="Changes" comment="user">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scripts/carrinho.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/carrinho.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scripts/nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/nav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scripts/pagamento.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/pagamento.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scripts/produto.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/produto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scripts/scriptprod.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/scriptprod.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scripts/usuario.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/usuario.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cadastro.html" beforeDir="false" afterPath="$PROJECT_DIR$/cadastro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carrinho.html" beforeDir="false" afterPath="$PROJECT_DIR$/carrinho.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/faleConosco.html" beforeDir="false" afterPath="$PROJECT_DIR$/faleConosco.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pagamento.html" beforeDir="false" afterPath="$PROJECT_DIR$/pagamento.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/produto.html" beforeDir="false" afterPath="$PROJECT_DIR$/produto.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/produtos.html" beforeDir="false" afterPath="$PROJECT_DIR$/produtos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuario.html" beforeDir="false" afterPath="$PROJECT_DIR$/usuario.html" afterDir="false" />
-    </list>
+    <list default="true" id="454f8b42-7782-4bfa-9e44-577d124e1390" name="Changes" comment=":D" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,7 +73,7 @@
       <workItem from="1786825679535" duration="2140000" />
       <workItem from="1786828939623" duration="3682000" />
       <workItem from="1786833136554" duration="948000" />
-      <workItem from="1786910480870" duration="14072000" />
+      <workItem from="1786910480870" duration="14343000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <option name="closed" value="true" />
@@ -140,7 +123,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786916202347</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary=":D">
+      <option name="closed" value="true" />
+      <created>1786927844242</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1786927844242</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +142,7 @@
     <MESSAGE value="happy" />
     <MESSAGE value="bem vindo" />
     <MESSAGE value="user" />
-    <option name="LAST_COMMIT_MESSAGE" value="user" />
+    <MESSAGE value=":D" />
+    <option name="LAST_COMMIT_MESSAGE" value=":D" />
   </component>
 </project>
