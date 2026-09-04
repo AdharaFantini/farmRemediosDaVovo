@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -41,11 +44,11 @@
 
         <div class="icones">
 
-            <a href="carrinho.html">
+            <a href="carrinho.php">
                 <i class="fa-solid fa-cart-shopping"></i>
             </a>
 
-            <a href="login.html" id="iconeUsuario">
+            <a href="login.php" id="iconeUsuario">
                 <i class="fa-solid fa-user"></i>
             </a>
 
@@ -60,13 +63,13 @@
 
     <ul>
 
-        <li><a href="index.html">Início</a></li>
+        <li><a href="index.php">Início</a></li>
 
-        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="produtos.php">Produtos</a></li>
 
-        <a href="faleConosco.html">Fale Conosco</a>
+        <a href="faleConosco.php">Fale Conosco</a>
 
-        <li><a href="index.html#sobre">Sobre nós</a></li>
+        <li><a href="index.php#sobre">Sobre nós</a></li>
 
 
     </ul>
@@ -75,7 +78,7 @@
 
         <span>Seja bem vindo(a),</span>
 
-        <a href="login.html" id="linkUsuario">
+        <a href="login.php" id="linkUsuario">
             Entre ou Cadastre-se
         </a>
 
@@ -314,7 +317,7 @@
 
                 Já tem uma conta?
 
-                <a href="login.html">
+                <a href="login.php">
                     Fazer login
                 </a>
 
@@ -457,7 +460,7 @@
 
         alert("Cadastro realizado com sucesso!");
 
-        window.location.href = "usuario.html";
+        window.location.href = "usuario.php";
 
     });
 
